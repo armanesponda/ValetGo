@@ -1,0 +1,30 @@
+html {
+  font-size: 22px;
+}
+h1 {
+text-align: center;
+font-family: Georgia;
+}
+html body {
+  background-color: #2F4F4F;
+  color: #e4e3e0;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover, a:active {
+  color: #eee;
+}
+
+table, tr, th, td, caption {
+  border: 1px solid #eee;
+  font-family: Monaco;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
