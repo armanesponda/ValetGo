@@ -1,5 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
 // Firebase configuration
 var firebaseConfig = {
@@ -8,7 +13,7 @@ var firebaseConfig = {
   projectId: "valetgo-e211c",
   storageBucket: "valetgo-e211c.firebasestorage.app",
   messagingSenderId: "272090189227",
-  appId: "1:272090189227:web:1f95a416bdc83ad66996ee"
+  appId: "1:272090189227:web:1f95a416bdc83ad66996ee",
 };
 
 // Initialize Firebase app
@@ -50,24 +55,48 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Event listener for login form submission
-const Submit = document.getElementById('Submit');
+const Submit = document.getElementById("Submit");
 
 Submit.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const Email = document.getElementById('Email').value;
-  const Password = document.getElementById('Password').value;
+  const Email = document.getElementById("Email").value;
+  const Password = document.getElementById("Password").value;
 
   signInWithEmailAndPassword(auth, Email, Password)
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      localStorage.setItem('loggedInUserId', user.uid);
-      window.location.href = "index.html";
+      localStorage.setItem("loggedInUserId", user.uid);
+      window.location.href = "homepage.html";
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       alert(errorMessage);
+    });
+});
+
+const RegisterSubmit = document.getElementById("RegisterSubmit");
+
+RegisterSubmit.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const REmail = document.getElementById("REmail").value;
+  const RPassword = document.getElementById("RPassword").value;
+
+  createUserWithEmailAndPassword(auth, REmail, RPassword)
+    .then((userCredential) => {
+      // Signed up
+      const user = userCredential.user;
+      alert("Account Created");
+      window.location.href = "index.html";
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+      // ..
     });
 });
