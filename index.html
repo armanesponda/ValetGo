@@ -12,20 +12,30 @@
               
           </style>
   </head>
-  <body>
-    <div id="root"></div>
+  
+    <div id="root">
     <script type="module" src="/src/main.tsx"></script>
 
           <header>
-          <a href="#Call To Action">About Section</a>
-          <a href="#Romanticism">Schedule Parking</a>
-          <a href="#contact">Report Issues!</a>
+        <div class="Table-Contents">
+          <a href="#Call To Action">
+            <button type="submit" class="btn">About Section</button></a>
+          <a href="#Romanticism">
+            <button type="submit" class="btn">Schedule Parking</button></a>
+          <a href="#contact">
+            <button type="submit" class="btn">Report Issues!</button></a>
+          <a href="Login.html">
+            <button type="submit" class="btn">Logout</button>
+          </a> 
+        </div>
+        <br>
+        <div class="Title">
           <h1>ValetGo</h1>
           <p>Easier parking solutions!</p>
+        </div>
           
       </header>
-  
-          <hr>
+      <body>
           
           <main>
   
@@ -47,41 +57,72 @@
           </p>
       
           </section>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+          <p>Hello</p>
+
   
-          <hr>
+
+        </body>
           <article id="contact">
-              <h2>Report Bugs</h2>
+            <div class="Reporting-Bugs">
+              <legend><h2>Report Bugs</h2></legend>
               <p>Thank you for making our product better!</p>
   
               <form action="https://httpbin.org/get" method="get">
-                  <fieldset>
-                      <legend>Report Faults</legend>
                   <p>
-                      <label for="Name">Name:</label>
-                      <input type="text" name="Name" id="Name" placeholder="Write here" autocomplete="on" required>
+                      <div class="input">
+                      <input type="text" name="Name" id="Name" placeholder="Write Name Here" autocomplete="on" required>
+                    </div>
                   </p>
                   <p>
-                      <label for="Email">Email:</label>
-                      <input type="text" name="Email" id="Email" placeholder="Write here" autocomplete="on" required>
+                      <div class="input">
+                      <input type="text" name="Email" id="Email" placeholder="Write Email Here" autocomplete="on" required>
+                      </div>
                   </p>
                   <!-- Add select and option for my subjects favorite foods -->
                   <p>
                       <label for="message">Report Bugs:</label>
                       <br>
+                      <div class="input">
                       <textarea name="wish" id="wish" cols="30" rows="10" placeholder="Type any bugs here"></textarea>
+                      </div>
                   </p>
              
-              <button type="submit">Submit</button>
-              <buttont type="submit" formaction="https://httpbin.org/post" formethod="post">Post</button>
-              <br>
-              <button type="reset">Reset</button>
-          </fieldset>
+                  <div class="SubmitReport">
+              <button type="submit" class="btn">Submit</button>
+              <buttont type="submit" formaction="https://httpbin.org/post" formethod="post"></button>
+              
+              <button type="reset" class="btn">Reset</button>
+            </div>
               </form>
+              </div>
           </article>
   
           </main>
           
-          <hr>
   
           <footer>
   
@@ -91,6 +132,7 @@
           </p>
   
           </footer>
-      </body>
+        </div>
+      
   
   </html>
