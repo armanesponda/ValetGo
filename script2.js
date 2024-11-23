@@ -16,6 +16,11 @@ var firebaseConfig = {
   appId: "1:272090189227:web:1f95a416bdc83ad66996ee",
 };
 
+const authorizedDriverEmails = [
+  "johndoe@gmail.com",
+  "janesmith@gmail.com",
+];
+
 // Initialize Firebase app
 const app = initializeApp(firebaseConfig);
 
@@ -77,6 +82,35 @@ Submit.addEventListener("click", (event) => {
     });
 });
 
+const driverSubmit = document.getElementById("DriverSubmit");
+
+driverSubmit.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const driverEmail = document.getElementById("DEmail").value;
+  const driverPassword = document.getElementById("DPassword").value;
+
+  // Check if the email is in the authorized list
+  if (!authorizedDriverEmails.includes(driverEmail)) {
+    alert("Unauthorized access. You are not registered as a driver.");
+    return;
+  }
+
+  // Proceed with Firebase authentication if the email is authorized
+  signInWithEmailAndPassword(auth, driverEmail, driverPassword)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+      alert("Welcome, Driver!");
+      window.location.href = "homepage.html"; // Redirect to the driver homepage
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+    });
+});
+
 const RegisterSubmit = document.getElementById("RegisterSubmit");
 
 RegisterSubmit.addEventListener("click", (event) => {
@@ -90,7 +124,7 @@ RegisterSubmit.addEventListener("click", (event) => {
       // Signed up
       const user = userCredential.user;
       alert("Account Created");
-      window.location.href = "index.html";
+      window.location.href = "index.html"
       // ...
     })
     .catch((error) => {
