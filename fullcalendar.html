@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'timeGridDay',
+          events: [
+            {
+              title: 'NBA Game',
+              start: '2024-11-28T10:00:00',
+              end: '2024-11-28T12:00:00'
+            },
+            {
+              title: 'Restaurant Special Gathering',
+              start: '2024-11-30T14:00:00',
+              end: '2024-11-30T16:00:00'
+            },
+            {
+              title: 'Anime Conventon',
+              start: '2024-12-02T09:00:00',
+              end: '2024-12-02T11:00:00'
+            }
+          ]
+        });
+        calendar.render();
+      });
+    </script>
+  </head>
+  <body>
+    <div id='calendar'></div>
+  </body>
+</html>
