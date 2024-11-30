@@ -8,9 +8,7 @@
     <meta name="description" content="Easier Parking Solutions">
     <title>ValetGo</title>
     <link rel="stylesheet" href="./src/homepage.css" type="text/css">
-          <style>
-              
-          </style>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
   </head>
   
     <div id="root">
@@ -38,42 +36,51 @@
       <body>
           
           <main>
+           
   
           <section id="Call to Action">
+
+            <h2>Schedule Parking!</h2>
+
+            <p>Your vehicle status:</p>
           
-              <h2>Simple Parking. Anywhere.</h2>
-  
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13386.39593991758!2d-96.74882296186011!3d32.98798028870832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1731950804752!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id='calendar'>
+            
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  var calendarEl = document.getElementById('calendar');
+                  var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'timeGridWeek',
+                    events: [
+                      {
+                        title: 'NBA Game',
+                        start: '2024-11-28T10:00:00',
+                        end: '2024-11-28T12:00:00'
+                      },
+                      {
+                        title: 'Restaurant Special Gathering',
+                        start: '2024-11-30T14:00:00',
+                        end: '2024-11-30T16:00:00'
+                      },
+                      {
+                        title: 'Anime Conventon',
+                        start: '2024-12-02T09:00:00',
+                        end: '2024-12-02T11:00:00'
+                      }
+                    ]
+                  });
+                  calendar.render();
+                });
+              </script>
+            
+              </div>
           
           </section>
           
           <hr>
   
           
-             </section>
-          <table>
-            <tr>
-              <th>Events</th>
-            </tr>
-            <tr>
-              <td>TTU Vs. TCU</td>
-            </tr>
-            <tr>
-              <td>UT Vs. Baylor</td>
-            </tr>
-            <tr>
-              <td>Daft Punk</td>
-            </tr>
-            <tr>
-              <td>Taylor Swift</td>
-            </tr>
-            <tr>
-              <td>Cowboys Vs. Texans</td>
-            </tr>
-            <tr>
-              <td>Some event</td>
-            </tr>
-          </table>
+          
 
 <br>
 <br>
@@ -151,16 +158,10 @@
           </article>
   
           </main>
-          
-  
           <footer>
-  
-          &lt;&lt;&lt; &copy; <a href="about.html">Team-7</a> &gt;&gt;&gt;
           <p>
               <a href="#">Back to Top</a>
           </p>
-  
           </footer>
         </div>
-  </html>
   </html>
