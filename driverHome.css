@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 22px;
+}
+
+header {
+  background-color:#0c2716;
+  backdrop-filter: blur(20px);
+  border: 1px, solid, #f1ecde;
+  margin: -20px;
+  margin-bottom: -10px;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0px;
+}
+
+.Title {
+  h1 {
+    font-size: 72px;
+  }
+  p {
+    font-size: 18px;
+  }
+text-align: center;
+margin-top: -30px;
+font-family: "Poppins";
+line-height: 15px;
+}
+
+ .Table-Contents .btn {
+  margin-left: 20px;
+  width: 100%;
+    height: 30px;
+    background: #e4e3e0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: #11301d;
+    font-weight: 700;
+}
+
+.Table-Contents a {
+  margin-right: 20px;
+}
+
+.Reporting-Bugs {
+  p {
+    margin: 20px;
+    
+  }
+  h2 {
+    margin: 10px;
+  }
+  background-color: #0b2414;
+  backdrop-filter: blur(20px);
+  border: 1px, solid, #e4e3e0;
+  margin: -15px;
+  margin-bottom: -10px;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0px;
+}
+
+.fc .fc-button {
+  color: #e4e3e0;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.fc {
+  border: 1px, solid, #e4e3e0;
+  width: 60%;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+.fc .fc-button:hover {
+  background-color: #11301d; 
+  cursor: pointer;
+}
+
+.fc .fc-toolbar-title {
+  font-family: "Poppins";
+  color: white;
+}
+
+.fc .fc-scroller::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.fc .fc-scroller::-webkit-scrollbar-track {
+  background: #efefeb; /* Background of the scrollbar track */
+}
+
+.fc .fc-scroller::-webkit-scrollbar-thumb {
+  background: #000000; /* Scrollbar thumb (draggable part) color */
+  border-radius: 5px; /* Round edges */
+}
+
+.SubmitReport .btn {
+  margin-left: 20px;
+  width: 20%;
+    height: 40px;
+    background: #e4e3e0;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #000000;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Poppins";
+    color: #11301d;
+    font-weight: 700;
+    margin-top: -35px;
+    margin-bottom: 10px
+}
+
+body {
+  font-family: "Poppins";
+  background: url('img2.jpg') no-repeat;
+  color: #e4e3e0;
+    background-size: 2100px 2900px;
+    background-position: top;
+    background-color: black;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+.Table-Contents {
+  justify-content: left;
+  display: flex;
+  font-size: 19px;
+  margin: 15px 0 15px;
+}
+
+.Table-Contents label input {
+  accent-color: #e4e3e0;
+  margin-right: 2px;
+
+}
+
+.Table-Contents a {
+  color: #e4e3e0;
+  text-decoration: none;
+}
+
+.Table-Contents a:hover {
+  text-decoration: underline;
+}
+
+.input input {
+  font-family: "Poppins";
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #e4e3e0;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #e4e3e0;
+  margin-left: 10px;
+  padding: 20px 0px 20px 20px;
+}
+
+.Mission {
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 10px 10px;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff39;
+}
+
+.input textarea {
+  font-family: "Poppins";
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #e4e3e0;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #e4e3e0;
+  padding: 20px 0px 20px 20px;
+  margin-left: 10px;
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 15px;
+  
+}
