@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Team 7">
+    <meta name="description" content="Easier Parking Solutions">
+    <title>ValetGo</title>
+    <link rel="stylesheet" href="./src/driverHome.css" type="text/css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+  </head>
+  
+    <div id="root">
+    <script type="module" src="/src/main.tsx"></script>
+
+          <header>
+        <div class="Table-Contents">
+          <a href="#Call To Action">
+            <button type="submit" class="btn">Schedule Parking</button></a>
+          <a href="#Mission Statement">
+            <button type="submit" class="btn">About Section</button></a>
+          <a href="#contact">
+            <button type="submit" class="btn">Report Issues!</button></a>
+          <a href="index.html">
+            <button type="submit" class="btn">Logout</button>
+          </a> 
+        </div>
+        <br>
+        <div class="Title">
+          <h1>ValetGo Drivers</h1>
+          <p>Easier parking solutions!</p>
+        </div>
+          
+      </header>
+      <body>
+          
+          <main>
+
+            <br>
+            <br>
+  
+          <section id="Call to Action">
+
+            <h2>Your Cars:</h2>
+
+            
+    
+          <div id='calendar'>
+            
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                  initialView: 'timeGridWeek',
+                  events: [
+                    {
+                      title: 'NBA Game',
+                      start: '2024-11-28T10:00:00',
+                      end: '2024-11-28T12:00:00'
+                    },
+                    {
+                      title: 'Restaurant Special Gathering',
+                      start: '2024-11-30T14:00:00',
+                      end: '2024-11-30T16:00:00'
+                    },
+                    {
+                      title: 'Anime Conventon',
+                      start: '2024-12-02T09:00:00',
+                      end: '2024-12-02T11:00:00'
+                    }
+                  ]
+                });
+                calendar.render();
+              });
+            </script>
+          
+            </div>
+          </section>
+          
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+          <hr>
+          <div class="Mission">
+          <section id="Mission Statement">
+  
+            <h2>Mission Statement</h2>
+    
+            <p>At ValetGo, our mission is to revolutionize urban parking by providing an organized valet service powered by smart technology. With a focus on transparent communication, an intuitive user interface, and seamless software, we aim to eliminate the frustration of searching for parking, offering efficient and reliable solutions to meet the growing demands of metropolitan centers.
+            </p>
+          </div>
+            <br>
+          
+
+        </body>
+          <article id="contact">
+            <div class="Reporting-Bugs">
+              <legend><h2>Report Bugs</h2></legend>
+              <p>Thank you for making our product better!</p>
+  
+              <form action="https://httpbin.org/get" method="get">
+                  <p>
+                      <div class="input">
+                      <input type="text" name="Name" id="Name" placeholder="Write Name Here" autocomplete="on" required>
+                    </div>
+                  </p>
+                  <p>
+                      <div class="input">
+                      <input type="text" name="Email" id="Email" placeholder="Write Email Here" autocomplete="on" required>
+                      </div>
+                  </p>
+                  <!-- Add select and option for my subjects favorite foods -->
+                  <p>
+                      <label for="message">Report Bugs:</label>
+                      <br>
+                      <div class="input">
+                      <textarea name="wish" id="wish" cols="30" rows="10" placeholder="Type any bugs here"></textarea>
+                      </div>
+                  </p>
+             
+                  <div class="SubmitReport">
+              <button type="submit" class="btn">Submit</button>
+              <buttont type="submit" formaction="https://httpbin.org/post" formethod="post"></button>
+              
+              <button type="reset" class="btn">Reset</button>
+            </div>
+              </form>
+              </div>
+          </article>
+  
+          </main>
+          
+  
+          <footer>
+  
+          <p>
+              <a href="#">Back to Top</a>
+          </p>
+  
+          </footer>
+        </div>
+  </html>
